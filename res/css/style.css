@@ -1,0 +1,24 @@
+.header {
+    background-color: lightgreen;
+    height: 20vh;
+    margin-bottom: 10vh;
+}
+.header-row {
+    height: 5vh;
+    background: lightgreen;
+
+}
+.nav {
+    border-style: inset;
+    border-color: lightgrey;
+    border-width: 10px;
+    
+}
+
+.main-tain {
+    background-color: lightgray;
+    border-style: outset;
+    border-width: 10px;
+    border-color: lightgrey;
+    height: 80vh;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A new portfolio, using the hours of knowledge I crammed during the first 3rd of bootcamp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonvictory/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonvictory/portfolio/issues"
+  },
+  "homepage": "https://github.com/jonvictory/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
