@@ -1,11 +1,19 @@
+p, h1, h2, h3, h4, h5 {
+    font-family: 'Share Tech', sans-serif;
+}
+
+.txt {
+    font-family: 'Share Tech', sans-serif;
+}
+
 .header {
-    background-color: lightgreen;
+    background-color: black;
     height: 20vh;
-    margin-bottom: 10vh;
+    /* margin-bottom: 10vh; */
 }
 .header-row {
     height: 5vh;
-    background: lightgreen;
+    background: black;
 
 }
 .nav {
@@ -15,10 +23,35 @@
     
 }
 
+.full-window-height {
+    height: 100vh; /* Support: http://caniuse.com/#search=vh */
+  }
+  .video-bg {
+    position: relative; /* contain the abs-pos <video> */
+    width: 100%;
+    overflow: hidden; /* prevent scrollbars */
+    /* these below don't matter: */
+    /*padding: 10% 0; */
+    text-align: center;
+    font: bold 40px/1.2 sans-serif;
+  }
+  .video-bg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* keep centered in parent */
+    z-index: -30; /* keep video behind other content */
+    min-width: 100%; /* always cover horizontal */
+    min-height: 100%; /* always cover vertical */
+  }
+
 .main-tain {
     background-color: lightgray;
-    border-style: outset;
+    border-style: inset;
     border-width: 10px;
     border-color: lightgrey;
-    height: 80vh;
+    height: 70vh;
+    z-index: 2;
+    margin-top: 2.5vh;
 }
+
