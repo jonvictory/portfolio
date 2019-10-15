@@ -1,11 +1,24 @@
-p, h1, h2, h3, h4, h5 {
-    font-family: 'Share Tech', sans-serif;
+h1, h2, h3, h4, h5 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: left;
+    color: rgb(255, 255, 0);
 }
-
+p {
+    text-align: left;
+    color:white;
+    font-size: .5em;
+    font-family: 'Press Start 2P', cursive;
+}
 .txt {
-    font-family: 'Share Tech', sans-serif;
-}
 
+    font-family: 'Press Start 2P', cursive;
+}
+.txt-white {
+    color:white;
+}
+.txt-brand {
+    color: rgb(255, 255, 0);
+}
 .header {
     background-color: black;
     height: 20vh;
@@ -17,12 +30,29 @@ p, h1, h2, h3, h4, h5 {
 
 }
 .nav {
+    background-color: blue;
+    color: white;
     border-style: inset;
     border-color: lightgrey;
     border-width: 10px;
     
 }
+.active {
+    font-weight: bolder;
+    color:  rgb(255, 255, 0);
+}
 
+.inactive {
+    color: white;
+}
+.bg-blue {
+    background-color: blue;
+}
+
+.con-con {
+    background-color:rgba(110, 110, 110, 0.925);
+    padding: .25em .5em .5em .5em;
+}
 .full-window-height {
     height: 100vh; /* Support: http://caniuse.com/#search=vh */
   }
@@ -46,12 +76,27 @@ p, h1, h2, h3, h4, h5 {
   }
 
 .main-tain {
-    background-color: lightgray;
+    background-color: rgba(0, 0, 255, 0.692);
     border-style: inset;
     border-width: 10px;
     border-color: lightgrey;
-    height: 70vh;
+    min-height: 70vh;
     z-index: 2;
     margin-top: 2.5vh;
+}
+
+.main-display {
+    display: block;
+}
+.main-hidden {
+    display: none;
+}
+.main-row {
+    padding-top: 1em;
+}
+
+.img-head {
+    margin: 0 .1em .5em .5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
