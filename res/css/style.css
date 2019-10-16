@@ -1,3 +1,9 @@
+html {
+    height: 100%;
+}
+body {
+    overflow: scroll;
+}
 h1, h2, h3, h4, h5 {
     font-family: 'Press Start 2P', cursive;
     text-align: left;
@@ -52,9 +58,11 @@ p {
 .con-con {
     background-color:rgba(110, 110, 110, 0.925);
     padding: .25em .5em .5em .5em;
+    margin-bottom: 5em;
+    min-height: 80vh;
 }
 .full-window-height {
-    height: 100vh; /* Support: http://caniuse.com/#search=vh */
+    height: 100%; /* Support: http://caniuse.com/#search=vh */
   }
   .video-bg {
     position: relative; /* contain the abs-pos <video> */
@@ -92,11 +100,10 @@ p {
     display: none;
 }
 .main-row {
-    padding-top: 1em;
+    padding: 1em 0 1em 0;
 }
 
-.img-head {
-    margin: 0 .1em .5em .5em;
+.img-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
