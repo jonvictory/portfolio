@@ -26,7 +26,7 @@ p {
   .abody:visited {
     
     font-family: 'Press Start 2P', cursive;
-    color: silver;
+    color:  rgb(255, 255, 0);
   }
   
   
@@ -49,6 +49,14 @@ p {
 .txt-white {
     color:white;
 }
+
+.txt-white-butt {
+    color:white;
+    font-size: .5em;
+    font-family: 'Press Start 2P', cursive;
+    /* padding-bottom: 20px; */
+
+}
 .txt-brand {
     color: rgb(255, 255, 0);
 }
@@ -69,6 +77,8 @@ p {
 .header {
     background-color: black;
     height: 20vh;
+    display: block;
+    z-index: 20;
     /* margin-bottom: 10vh; */
 }
 .header-row {
@@ -95,7 +105,9 @@ p {
     font-weight: bolder;
     color:  rgb(255, 255, 0);
 }
-
+.nav-page:hover {
+    color: rgb(255, 0, 0);
+}
 .inactive {
     color: white;
 }
@@ -120,7 +132,7 @@ p {
     /*padding: 10% 0; */
     text-align: center;
     font: bold 40px/1.2 sans-serif;
-    padding-top: 2em;
+    padding-top: 1em;
   }
   .video-bg video {
     position: absolute;
@@ -179,10 +191,10 @@ margin: 10px;
 }
 
 .secret-sound {
-    color: rgb(255, 255, 200);
+    color: rgb(0, 255, 0);
 }
 .secret-sound:hover {
-    color: green
+    color: rgb(255, 0, 0)
     
 }
 
@@ -194,8 +206,15 @@ margin: 10px;
 .gallery-display {
     display: none;
 }
+.gallery-slot:hover {
+    background-color: rgb(255, 0, 0);
+}
 .close-gallery {
     padding: 10% 0 10% 0;
     text-align: center;
+}
+
+#photography-card:hover {
+background-color: rgb(255, 0, 0);
 }
 

@@ -34,6 +34,7 @@ $('.secret-sound').on('click', function(){
 $('#photography-card').click(function(){
     $('#photography').fadeIn('fast');
     $('#hobbiespage').toggle('normal');
+    $('.header').slideUp('fast')
 })
 
 var galleryImage = []
@@ -59,5 +60,6 @@ $(this).addClass('img-full')
 $('.close-gallery').click(function(){
     $('#photography').toggle('normal');
     $('#hobbiespage').fadeIn('fast');
+    $('.header').slideDown('slow')
 })
 })
