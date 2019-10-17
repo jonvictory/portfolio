@@ -25,4 +25,39 @@ var navID = ['home', 'hobbies', 'education', 'work', 'portfolio']
                
         }
     })
+
+$('.secret-sound').on('click', function(){
+    var secret = $("#secret")[0];
+		secret.play()
+})
+
+$('#photography-card').click(function(){
+    $('#photography').fadeIn('fast');
+    $('#hobbiespage').toggle('normal');
+})
+
+var galleryImage = []
+$('.img-preview').click(function(){
+    imgClone = $(this).clone();
+    console.log(imgClone)
+    console.log(this)
+$('.gallery-display').append(imgClone);
+$(imgClone).removeClass('img-preview')
+$(imgClone).addClass('img-full')
+$('.gallery-display').fadeIn('slow');
+$('#photography').fadeOut('fast');
+})
+
+$('.gallery-display').click(function(){
+    $('#photography').fadeIn('slow');
+$('.gallery-display').fadeOut('fast');
+    $('.gallery-display').empty();
+    $(this).removeClass('img-preview')
+$(this).addClass('img-full')
+})
+
+$('.close-gallery').click(function(){
+    $('#photography').toggle('normal');
+    $('#hobbiespage').fadeIn('fast');
+})
 })

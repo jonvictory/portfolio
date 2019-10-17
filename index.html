@@ -8,10 +8,12 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cute+Font|Press+Start+2P|Turret+Road&display=swap"
         rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="res/css/style.css">
 </head>
 
 <body>
+    <audio id="secret" src="res/sound/Zelda's Secret Sound.mp3"></audio>
     <header>
         <div class="container-fluid header">
             <div class="row header-row">
@@ -21,9 +23,9 @@
             </div>
             <div class="row header-row">
                 <div class="container nav">
-                    <nav class="navbar navbar-expand-lg navbar blue txt-white">
+                    <nav class="navbar navbar-expand-lg navbar txt-white">
                         <a class="navbar-brand txt txt-brand" href="#">«Victory»</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        <button class="navbar-toggler nav-butt" type="button" data-toggle="collapse"
                             data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -35,8 +37,6 @@
                                 <a class="nav-item nav-link txt inactive nav-page" id="education" href="#">Education</a>
                                 <a class="nav-item nav-link txt inactive nav-page" id="work" href="#">Work</a>
                                 <a class="nav-item nav-link txt inactive nav-page" id="portfolio" href="#">Portfolio</a>
-                                <a class="nav-item nav-link disabled" href="#" tabindex="-1"
-                                    aria-disabled="true">Disabled</a>
                             </div>
                         </div>
                     </nav>
@@ -63,6 +63,27 @@
                 </div>
             </div>
 
+
+            <div class="gallery" id="photography">
+                    <div class="row">
+                        <div class="col-md-4 gallery-slot"><img src="res/images/P1010045.JPG.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                        <div class="col-md-4 gallery-slot"><img src="res/images/P1010282.JPG.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                        <div class="col-md-4 gallery-slot"><img src="res/images/P1010283.JPG.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-4 gallery-slot"><img src="res/images/j.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                            <div class="col-md-4"><p class="close-gallery">Click an image to view full size.</p><p class="close-gallery">Click Here to exit gallery.</p></div>
+                            <div class="col-md-4 gallery-slot"><img src="res/images/ME.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                        </div>
+                        <div class="row">
+                                <div class="col-md-4 gallery-slot"><img src="res/images/DSCF5023.JPG.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                                <div class="col-md-4 gallery-slot"><img src="res/images/DSCF5075.JPG.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                                <div class="col-md-4 gallery-slot"><img src="res/images/DSCF5189.JPG.jpg" class="img-fluid img-shadow img-preview img-gallery"></div>
+                            </div>
+                </div>
+
+                <div class="gallery-display"></div>
+
             <div class="container main-tain main-hidden" id="hobbiespage">
                 <div class="row main-row">
                     <div class="col-md-4">
@@ -70,23 +91,28 @@
                     </div>
                     <div class="col-md-8">
                         <h3>Hobbies</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam doloribus, laborum sunt maxime aspernatur, eaque sit consequuntur labore debitis voluptatum, autem id repellendus magnam voluptatem atque obcaecati est illo non.</p>
+                        <p><span class="secret-sound">It is a secret to everyone</span> that I completed a year in music theory, before switching gears to pursue quantitative economic theory in college. It remains a hobby of mine, along with other past pursuits like illustration.</p>
                     </div>
                 </div>
                 <div class="row main-row">
                     <div class="col-md-4">
-                        <img src="res/images/P1010045.JPG.jpg" class="img-fluid img-shadow">
-                        <p>I like to make music!</p>
+                        <img src="res/images/korg.jpg" class="img-fluid img-shadow">
+                        <p class="main-txt-card">I produce a lot of music. You can hear some of it on:</p>
+                        <ul class="main-txt-card-list">
+                            <li><a class="abody" target="_blank"  href="https://soundcloud.com/jonvictory">SoundCloud</a></li>
+                            <li><a class="abody" target="_blank"  href="https://www.youtube.com/user/zapblaster">youtube</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="photography-card">
                         <img src="res/images/P1010282.JPG.jpg" class="img-fluid img-shadow">
-                        <p>I like to take pictures!</p>
+                        <p class="main-txt-card">I like to take pictures!</p>
                     </div>
                     <div class="col-md-4">
                         <img src="res/images/P1010283.JPG.jpg" class="img-fluid img-shadow">
-                        <p>I like to make stupid pictures!</p>
+                        <p class="main-txt-card">I like to make stupid pictures!</p>
                     </div>
                 </div>
+
             </div>
 
             <div class="container main-tain main-hidden" id="educationpage">
@@ -96,14 +122,88 @@
                     </div>
                     <div class="col-md-8">
                         <h3>Education</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam doloribus, laborum sunt maxime aspernatur, eaque sit consequuntur labore debitis voluptatum, autem id repellendus magnam voluptatem atque obcaecati est illo non.</p>
+                        <p>I sealed my fate as a non-traditional student when I dropped out of high school at age 17 and was officially labeled as such when I enrolled in college at the age of 27. Despite my a-typical background, academia was an environment that I thrived in. By the time my undergrad was finished, I had also completed many graduate level courses in economics, mathematics, and statistics.</p>
                     </div>
                 </div>
-                <div class="row main-row">
-                    <div class="col-md-12" style = "background-color: white;">
-                        <img src="res/images/Technical.png" class="img-fluid">
+                <div class="row main-row bg-edu">
+                        <div class="col-md-4">
+                            <p class="txt-edu">2012 - 2014</p>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="li-edu">
+                                    <li>Utah State University</li>
+                                    <li>Economic Theory (Quantitative)</li>
+                                    <li>Minor: Mathematics</li>
+                                    <li>GPA: 3.85</li>
+                                    <li>May 2014</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                    <div class="row main-row bg-edu">
+                            <div class="col-md-4">
+                                <p class="txt-edu">2019 - Present</p>
+                            </div>
+                            <div class="col-md-8">
+                                <ul class="li-edu">
+                                        <li>University of Utah</li>
+                                        <li>Full-stack Web Development</li>
+                                        <li>GPA: 4.0</li>
+                                        <li>Currently Enrolled</li>
+                                </ul>
+        
+                            </div>
+                        </div>
+                <div class="row main-row bg-edu">
+                    <div class="col-md-4">
+                        <p class="txt-edu">2010 - 2012</p>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="li-edu">
+                                <li>Salt Lake Community College</li>
+                                <li>Economics</li>
+                                <li>GPA 3.90</li>
+                                <li>May 2012</li>
+                        </ul>
+
                     </div>
                 </div>
+                <div class="row main-row bg-edu">
+                        <div class="col-md-4">
+                            <p class="txt-edu">2014</p>
+                        </div>
+                        <div class="col-md-8">
+                                <p class="txt-edu">USU John M. Huntsman School of Business Departmental Scholarship</p>
+                        </div>
+                    </div>
+                <div class="row main-row bg-edu">
+                        <div class="col-md-4">
+                            <p class="txt-edu">2012</p>
+                        </div>
+                        <div class="col-md-8">
+                                <p class="txt-edu">USU Full-tuition Academic Scholarshipp</p>
+    
+                        </div>
+                    </div>
+                <div class="row main-row bg-edu">
+                        <div class="col-md-4">
+                            <p class="txt-edu">2012</p>
+                        </div>
+                        <div class="col-md-8">
+                                <p class="txt-edu">SLCC School of Business Departmental Scholarship</p>
+    
+                        </div>
+                    </div>
+                    <div class="row main-row bg-edu">
+                            <div class="col-md-4">
+                                <p class="txt-edu">2012</p>
+                            </div>
+                            <div class="col-md-8">
+                                    <p class="txt-edu">SLCC Excellence in Diversity Scholarship</p>
+        
+                            </div>
+                        </div>
+                        
             </div>
 
             <div class="container main-tain main-hidden" id="workpage">
@@ -113,10 +213,16 @@
                     </div>
                     <div class="col-md-8">
                         <h3>Work</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam doloribus, laborum sunt maxime aspernatur, eaque sit consequuntur labore debitis voluptatum, autem id repellendus magnam voluptatem atque obcaecati est illo non.</p>
+                        <p>Prior to college, I worked in just about every entry-level skill industry you can think off. From restaraunts to book distribution, even truck-parts manufacturing. After graduating, I decided that I didn't want to work in the banking industry. A friend of mine offered me a position as an SEO. From there I transitioned into marketing content. Currently, I'm working as a technical writer, primarily focused on API documentation.</p>
+                        
                     </div>
                 </div>
-            </div>
+                    <div class="row main-row">
+                        <div class="col-md-12" style = "background-color: white;">
+                            <img src="res/images/Technical.png" class="img-fluid img-res">
+                        </div>
+                    </div>
+                </div>
 
             <div class="container main-tain main-hidden" id="portfoliopage">
                 <div class="row main-row">
@@ -136,10 +242,14 @@
     <footer>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <script
-  src="https://code.jquery.com/jquery-3.4.1.slim.js"
-  integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   
     <script src="res/js/js.js">
     </script>

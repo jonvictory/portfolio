@@ -15,6 +15,33 @@ p {
     font-size: .5em;
     font-family: 'Press Start 2P', cursive;
 }
+
+.abody:link {
+    
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 255, 0);
+  }
+  
+  
+  .abody:visited {
+    
+    font-family: 'Press Start 2P', cursive;
+    color: silver;
+  }
+  
+  
+  .abody:hover {
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 0, 0);
+  }
+  
+ 
+  .abody:active {
+    
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(0, 255, 0);
+  }
+
 .txt {
 
     font-family: 'Press Start 2P', cursive;
@@ -25,6 +52,20 @@ p {
 .txt-brand {
     color: rgb(255, 255, 0);
 }
+.txt-edu {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.li-edu {
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-size: .5em;
+    list-style: none;
+    text-align: left;
+}
+
 .header {
     background-color: black;
     height: 20vh;
@@ -41,7 +82,14 @@ p {
     border-style: inset;
     border-color: lightgrey;
     border-width: 10px;
+    z-index: 10;
     
+}
+.nav-butt {
+    background-color: grey;
+    border-style: outset;
+    border-color: grey;
+    border-width: 10px;
 }
 .active {
     font-weight: bolder;
@@ -72,6 +120,7 @@ p {
     /*padding: 10% 0; */
     text-align: center;
     font: bold 40px/1.2 sans-serif;
+    padding-top: 2em;
   }
   .video-bg video {
     position: absolute;
@@ -83,6 +132,9 @@ p {
     min-height: 100%; /* always cover vertical */
   }
 
+  .bg-edu {
+      background-color: white;
+  }
 .main-tain {
     background-color: rgba(0, 0, 255, 0.692);
     border-style: inset;
@@ -90,7 +142,7 @@ p {
     border-color: lightgrey;
     min-height: 70vh;
     z-index: 2;
-    margin-top: 2.5vh;
+    margin-top: 1vh;
 }
 
 .main-display {
@@ -102,8 +154,48 @@ p {
 .main-row {
     padding: 1em 0 1em 0;
 }
-
+.main-txt-card {
+    margin-top: 1em;
+    font-size: .4em
+}
+.main-txt-card-list {
+    font-size: .4em;
+    text-align: left;
+}
 .img-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.img-preview {
+max-height: 240px;
+max-width: 240px;
+margin: 10px;
+}
+.img-full {
+    padding: 1px;
+}
+
+.img-res {
+   float: left;
+}
+
+.secret-sound {
+    color: rgb(255, 255, 200);
+}
+.secret-sound:hover {
+    color: green
+    
+}
+
+.gallery {
+    display: none;
+    z-index:2;
+}
+
+.gallery-display {
+    display: none;
+}
+.close-gallery {
+    padding: 10% 0 10% 0;
+    text-align: center;
 }
 
