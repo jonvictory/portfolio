@@ -60,12 +60,17 @@ p {
 .txt-brand {
     color: rgb(255, 255, 0);
 }
+.txt-brand:hover {
+    color: rgb(255, 0, 0);
+}
 .txt-edu {
     font-family: 'Lato', sans-serif;
     color: black;
     text-align: center;
 }
-
+.txt-portfolio {
+    margin-top: 1em;
+}
 .li-edu {
     font-family: 'Lato', sans-serif;
     color: black;
@@ -182,6 +187,11 @@ max-height: 240px;
 max-width: 240px;
 margin: 10px;
 }
+.img-portfolio {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    }
 .img-full {
     padding: 1px;
 }
@@ -191,7 +201,7 @@ margin: 10px;
 }
 
 .secret-sound {
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 0);
 }
 .secret-sound:hover {
     color: rgb(255, 0, 0)
